@@ -9,7 +9,7 @@
   <packaging>jar</packaging>
   <name>Spark Accumulo Ingest</name>
 
-  <!-- repositories>
+  <repositories>
     <repository>
       <id>apache-repo</id>
       <name>Apache Repository</name>
@@ -21,7 +21,7 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-  </repositories -->
+  </repositories>
 
 
   <dependencies>
@@ -83,7 +83,7 @@
             </goals>
             <configuration>
               <shadedArtifactAttached>true</shadedArtifactAttached>
-              <shadedClassifierName>shaded</shadedClassifierName>`
+              <shadedClassifierName>shaded</shadedClassifierName>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
                 <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
